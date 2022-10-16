@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
 
-     {{ 'index.js' | asset_url | script_tag }}
+ 
 {{ 'style.css' | asset_url | stylesheet_tag }}
 {{ content_for_header }}
    
@@ -120,7 +120,7 @@
       {{ content_for_layout }}
     </main>
 
-  
+      {{ 'index.js' | asset_url | script_tag }}
   
   </body>
 </html>
