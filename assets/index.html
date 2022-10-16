@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hippo Video Recorder SDK</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <script>
+      var s = document.createElement("script");
+      s.src =
+        "https://s3.amazonaws.com/hippovideo-embed-widget/js/hippovideo-embed-script.js";
+      window.setDigestOnStart = true;
+      s.async = true;
+      window.hippovideoDigest = "XWlF3d_UZVPD7T0MkY7PVQ";
+      window.hvintegtype = "generic_embed";
+      window.hippoWidget = {
+        loadedCallbacks: [],
+        isLoaded: false,
+        onLoad: function (callback) {
+          if (window.hippoWidget.isLoaded == true) callback();
+          else window.hippoWidget.loadedCallbacks.push(callback);
+        }
+      };
+      document.head.appendChild(s);
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+    
+      
+      <br />
+      <!-- <div>
+        <input
+          type="radio"
+          id="defaultButton"
+          name="recorder_options"
+          value="default"
+          checked
+        />
+        <label for="html">Default button</label><br />
+        <input
+          type="radio"
+          id="customButton"
+          name="recorder_options"
+          value="custom"
+        />
+        <label for="html">Custom button</label><br />
+         <input
+          type="radio"
+          id="inlineRecButton"
+          name="recorder_options"
+          value="inline"
+        />
+        <label for="inlineRecButton">Inline Recording</label><br /> 
+      </div> -->
+      <div id="defaultButtonContainer">
+        <!-- <div id="hv-generic-embed-input"><input type="text" /></div> -->
+      </div>
+      <div id="inlineRecordingContainer" style="display: none;">
+        <div class="options-button" id="inlineWebcamRecord">Record Webcam</div>
+        <div class="embedded-recorder" id="embeddedRecorder"></div>
+      </div>
+      <div id="customButtonContainer" style="display: none;">
+        <!-- <div>Button color picker:</div>
+        <div id="colorPicker" class="color-picker-container">
+          <input
+            type="radio"
+            id="defaultColor"
+            name="color_picker"
+            value="default"
+            checked
+          />
+          <label for="html">Default color</label>
+          <input type="radio" id="blueColor" name="color_picker" value="blue" />
+          <label for="html">Blue color</label>
+          <input
+            type="radio"
+            id="orangeColor"
+            name="color_picker"
+            value="orange"
+          />
+          <label for="html">Orange color</label>
+        </div> -->
+        <!-- <div class="options-button" id="screenRecord">Record Screen</div>
+      
+        <div class="options-button" id="import">Import Video</div> -->
+      </div>
+      <div>
+        <div class="options-button" id="webcamRecord">Record Webcam</div>
+        <div>Recorder events:</div>
+        <div
+          id="eventsContainer"
+          style="
+            height: 200px;
+            max-width: 80%;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+          "
+        ></div>
+      </div>
+      <div>
+        <div>Submitted video preview:</div>
+        <div id="iframeContainer"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
