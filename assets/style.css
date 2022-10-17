@@ -29,9 +29,10 @@ body {
     background-color: #6a0dad;
     display: inline-block;
     color: #fff;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
     display: inline-block;
     border-radius: 5px;
     cursor: pointer;
