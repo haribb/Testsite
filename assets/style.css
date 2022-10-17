@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: inline-block;
     border-radius: 5px;
     cursor: pointer;
   }
