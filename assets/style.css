@@ -27,7 +27,7 @@ body {
      display: flex;
     justify-content: center;
     align-items: center;
-    margin:  auto;
+   height: 70vh;
   }
   .options-button {
     padding: 10px 15px;
