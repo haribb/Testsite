@@ -23,7 +23,11 @@ body {
   .color-picker-container {
     margin: 10px 0;
   }
-  
+  .record-btn{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .options-button {
     padding: 10px 15px;
     background-color: #6a0dad;
