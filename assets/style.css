@@ -29,6 +29,9 @@ body {
     background-color: #6a0dad;
     display: inline-block;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     cursor: pointer;
   }
